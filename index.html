@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>R2tex_Website</title>
-</head>
-<body>
-    <h1>Titre</h1>
-    <h2>text</h2>
-</body>
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Site R2tex</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="corp">
+
+        <!--<iframe src="https://discord.com/widget?id=980183243380908042&theme=dark" width="500" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
+        <script>
+            var corpElement = document.getElementById("corp");
+            var angle = 0;
+            function rotateLastGradient() {
+                angle += 1;
+                corpElement.style.background = `linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), no-repeat center / 40% url("plus/R2tex_Corp1024x1024.png"), linear-gradient(${angle}deg, #6f0c9b, #cc7901)`;
+            }
+            setInterval(rotateLastGradient, 50);
+
+        </script>
+    </body>
 </html>
