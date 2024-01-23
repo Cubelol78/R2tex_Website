@@ -1,5 +1,5 @@
 #corp{
-    background:  linear-gradient(rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)) , no-repeat center url("plus/R2tex_Corp1024x1024.png"), linear-gradient(90deg, #6f0c9b , #cc7901);
+    background: no-repeat center url("plus/R2tex_Corp1024x1024.png"), linear-gradient(90deg, #6f0c9b , #cc7901);
     background-attachment: fixed;
     transition: background-size 2s ease-in-out;
 }
