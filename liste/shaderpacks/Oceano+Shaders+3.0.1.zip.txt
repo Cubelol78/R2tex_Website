@@ -1,0 +1,6 @@
+#Wed Dec 06 19:51:53 CET 2023
+shadowDistance=50
+shadowMapResolution=256
+VolumetricLight=false
+WaterRefract=false
+Bloom=false
