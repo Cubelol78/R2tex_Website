@@ -8,14 +8,16 @@
 
         <!--<iframe src="https://discord.com/widget?id=980183243380908042&theme=dark" width="500" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
         <div class="grid">
-            <a class="button" href="http://88.160.15.18:49139/" ><div class="premier" onMouseover="onmap()" onMouseout="offmap()">MAP</div></a>
-            <a class="button" href="https://drive.usercontent.google.com/download?id=16yY4jXDEXFUeIGCwkS4xXFYv8Ogy5FqV&export=download&authuser=0" target="_blank" download=""></a><div class="deuxieme">2test</div>
-            <div class="troisieme">troistest</div>
-            <div class="quatrieme">catretest</div>
-            <div class="cinquieme">5sptest</div>
+            <div class="premier" onMouseover="onmap()" onMouseout="offmap()"><a target="_blank" class="button" href="http://88.160.15.18:49139/#world:-19:45:51:296:-1.13:0.85:0:0:perspective" ><div>MAP</div></a></div>
+            <div class="deuxieme"><h1>R2tex Corp Serveur</h1></div>
+            <div class="troisieme"><a class="button" href="https://drive.usercontent.google.com/download?id=16yY4jXDEXFUeIGCwkS4xXFYv8Ogy5FqV&export=download&authuser=0" target="_blank" download=""><div>telechargement mods</div></a></div>
+            <div class="quatrieme"><a id="textToCopy" onclick="copyText()" class="button"><div id="color">88.160.15.18:49140</div></a></div>
+            <div class="cinquieme"><a class="button" href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.2.20/forge-1.20.1-47.2.20-installer.jar" target="_blank"><div><span>telechargement forge</span></div></a></div>
         </div>
         <script>
             var corpElement = document.getElementById("corp");
+            var textToCopyElement = document.getElementById("textToCopy");
+            var colorElement = document.getElementById('color');
             var angle = 0;
             var fond_map=true
             function onmap(){
@@ -36,8 +38,33 @@
                 
             }
             setInterval(rotateLastGradient, 200);
-            
+            function copyText() {
+                var textToCopy = '88.160.15.18:49140';
 
+                // Créez une plage de texte
+                var range = document.createRange();
+                range.selectNode(document.getElementById('textToCopy'));
+
+                // Ajoutez la plage de texte à la sélection
+                window.getSelection().removeAllRanges();
+                window.getSelection().addRange(range);
+
+                // Copiez le texte dans le presse-papiers
+                document.execCommand("copy");
+                window.getSelection().removeAllRanges();
+                var colorElement = document.getElementById('color');
+                colorElement.style.backgroundColor = 'rgba(0, 128, 0, 0.5)'; // Changez la couleur à votre convenance
+                var changingTextElement = document.getElementById("color");
+
+                // Changez le texte
+                changingTextElement.innerText = "ip copié bon jeux";
+                setTimeout(function() {
+                    changingTextElement.innerText = "88.160.15.18:49140";
+                    changingTextElement.style.backgroundColor = 'rgba(0, 0, 0, 0.25)'; 
+                }, 3000);
+                
+                //changecolor()
+            }
         </script>
     </body>
 </html>
