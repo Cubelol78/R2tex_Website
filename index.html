@@ -29,13 +29,8 @@
                 console.log(fond_map)
             }
             function rotateLastGradient() {
-                if(fond_map=true){
                     angle += 1;
-                    corpElement.style.background = `no-repeat center / 40% url("plus/R2tex_Corp1024x1024.png"), linear-gradient(${angle}deg, #6f0c9b, #cc7901)`;
-                }else{
-
-                }
-                
+                    corpElement.style.background = `no-repeat 53% center / 40% url("plus/R2tex_Corp1024x1024.png"), linear-gradient(${angle}deg, #6f0c9b, #cc7901)`; 
             }
             setInterval(rotateLastGradient, 200);
             function copyText() {
