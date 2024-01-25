@@ -7,14 +7,36 @@
     <body id="corp">
 
         <!--<iframe src="https://discord.com/widget?id=980183243380908042&theme=dark" width="500" height="700" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>-->
+        <div class="grid">
+            <a class="button" href="http://88.160.15.18:49139/" ><div class="premier" onMouseover="onmap()" onMouseout="offmap()">MAP</div></a>
+            <a class="button" href="https://drive.google.com/file/d/16yY4jXDEXFUeIGCwkS4xXFYv8Ogy5FqV/view" download=""></a><div class="deuxieme">2test</div>
+            <div class="troisieme">troistest</div>
+            <div class="quatrieme">catretest</div>
+            <div class="cinquieme">5sptest</div>
+        </div>
         <script>
             var corpElement = document.getElementById("corp");
             var angle = 0;
+            var fond_map=true
+            function onmap(){
+                fond_map=false
+                console.log(fond_map)
+            }
+            function offmap(){
+                fond_map=true
+                console.log(fond_map)
+            }
             function rotateLastGradient() {
-                angle += 1;
-                corpElement.style.background = `no-repeat center / 40% url("plus/R2tex_Corp1024x1024.png"), linear-gradient(${angle}deg, #6f0c9b, #cc7901)`;
+                if(fond_map=true){
+                    angle += 1;
+                    corpElement.style.background = `no-repeat center / 40% url("plus/R2tex_Corp1024x1024.png"), linear-gradient(${angle}deg, #6f0c9b, #cc7901)`;
+                }else{
+
+                }
+                
             }
             setInterval(rotateLastGradient, 200);
+            
 
         </script>
     </body>
